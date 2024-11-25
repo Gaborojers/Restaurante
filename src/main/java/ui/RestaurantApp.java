@@ -57,9 +57,10 @@ public class RestaurantApp extends GameApplication {
     private void createBackground() {
         FXGL.entityBuilder()
                 .at(0, 0)
-                .view(new Rectangle(WINDOW_WIDTH, WINDOW_HEIGHT, Color.LIGHTGRAY))
+                .view(FXGL.texture("floor.jpeg", WINDOW_WIDTH, WINDOW_HEIGHT))
                 .buildAndAttach();
     }
+
 
     private void createKitchenAndWaitingArea() {
         // Área de cocina
